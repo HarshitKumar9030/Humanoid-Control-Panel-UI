@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body">
+    <nav>
+        <ul>
+            <li>Our Story</li>
+            <li>ATL - UCSKM</li>
+            <li>Team Members</li>
+        </ul>
+        <div id="menu" class="menu">
+            <div id="menu" class="line"></div>
+            <div id="menu" class="line"></div>
+            <div id="menu" class="line"></div>
+        </div>
+        <div id="menuBox" class="openMenuBox">
+            <div id="menuBoxContent">
+                <ul class="menuUl menuContent">
+                    <div class="lightSection menuContent">
+                        Change Lights / Status
+                    </div>
+                    <div class="lightSection menuContent">
+                        Change Mode: Auto / Manual
+                    </div>
+                    <div class="lightSection menuContent">
+                        Audio Controls
+                    </div>
+                    <div class="lightSection menuContent">
+                        Motion Controls
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="mobileNav">
+            <div class="icon">
+                <div class="tooltip">
+                    Change Lights/Status
+                </div>
+                <svg class="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                    </path>
+                </svg>
+            </div>
+            <div class="icon">
+                <div class="tooltip">
+                    Change Mode: <br>Auto / Manual
+                </div>
+                <svg class="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+                    </path>
+                </svg>
+            </div>
+            <div class="icon">
+                <div class="tooltip">
+                    Audio Controls
+                </div>
+                <svg class="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
+                    </path>
+                </svg>
+            </div>
+            <div class="icon">
+                <div class="tooltip">
+                    Motion Controls
+                </div>
+                <svg class="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                    </path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <div class="border"></div>
+    <div id="movementControls" class="mainPanel">
+        <div id="statusicon" class="connectionStatus">
+            <div class="tooltipConnection">
+                Connection Status
+            </div>
+            <div id="indicator" class="reddot"></div>
+        </div>
+        <div class="sectionLeftMain">
+            <div class="connect">
+                <div class="connectTitle">
+                    Connect to the Express Server of the Raspberry Pi
+                </div>
+                <div class="serverURL">
+                    <div class="URLLabel">
+                        Server URL
+                    </div>
+                    <div class="serverURLInput">
+                        <input type="text" id="serverURL" name="serverURL" placeholder="Enter Server URL">
+                    </div>
+                </div>
+                <div class="connectButton">
+                    <button id="connectButton" class="connectButton">Connect</button>
+                </div>
+            </div>
+        </div>
+        <div class="sectionRightMain">
+            <div id="motorControls" class="motonControls hidden">
+                <div class="topLayer">
+                    <div id="forward" class="forward mc"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                        </svg></div>
+                </div>
+                <div class="middleLayer">
+                    <div id="left" class="left mc"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg></div>
+                    <div id="stop" class="middle mc"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636">
+                            </path>
+                        </svg></div>
+                    <div id="right" class="right mc"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></div>
+                </div>
+                <div class="bottomLayer">
+                    <div id="backward" class="backward mc"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bodyControls">
+        <div class="slider">
+            <div class="sliderContainer">
+                <input id="s1" type="range" min="0" max="100" value="0" class="slider" id="headSlider">
+            </div>
+            <div id="s1v" class="SliderValue">
+
+            </div>
+        </div>
+    </div>
+    <div id="LockPage" class="lockPage">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+            </path>
+        </svg>
+        <div class="tooltipLock">
+            Robot On
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Script's -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
