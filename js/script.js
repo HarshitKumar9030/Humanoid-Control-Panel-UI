@@ -448,3 +448,19 @@ s1.addEventListener('input', () => {
     s1value.textContent = s1.value
 }
 )
+
+
+
+
+// href's
+
+const bodyHref = document.getElementById('bchr')
+
+bodyHref.addEventListener('click', () => {
+    window.location.href = '#bodyControls'
+    // close menu
+    menu.classList.toggle('change')
+    menuContent.classList.toggle('change')
+    body.style.backgroundColor = '#f2f2f2'
+    body.style.zIndex = '0'
+})

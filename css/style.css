@@ -105,7 +105,7 @@ nav ul li:hover {
 .openMenuBox {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 40%;
@@ -149,7 +149,8 @@ nav ul li:hover {
 
 #menuBoxContent {
     display: none;
-    height: 70%;
+    height: 90%;
+    position: relative;
 }
 
 .menuUl {
@@ -226,8 +227,8 @@ nav ul li:hover {
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: #004363f3;
-    z-index: 1;
+    background-color: #004463;
+    z-index: 2;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -708,6 +709,10 @@ nav ul li:hover {
     animation: animSlider 300ms;
 }
 
+.slider:hover {
+    opacity: 1;
+}
+
 @keyframes animSlider {
     0% {
         opacity: 0;
@@ -720,6 +725,49 @@ nav ul li:hover {
 .slider:hover {
     opacity: 1;
 }
+
+.titleSection {
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(61, 5, 5);
+    margin: 4px 8px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-ms-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+
+
+
 /* 
 
 Story Page 
@@ -742,3 +790,71 @@ ATL Page
 Team Members Page
 
 */
+
+
+/*
+    Scroll Bar Styles
+*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(12, 60, 63);
+    border-radius: 12px;
+    animation: fadeSlide 300ms;
+    transition-duration: 300ms;
+    transition: ease-in-out 300ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(34, 190, 230);
+    animation: fadeSlide 300ms;
+    transition-duration: 300ms;
+    transition: ease-in-out 300ms;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(34, 190, 230);
+    animation: fadeSlide 300ms;
+    transition-duration: 300ms;
+    transition: ease-in-out 300ms;
+}
+
+/* Mozilla */
+
+/* width */
+
+::-moz-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+
+::-moz-scrollbar-track {
+    background: #f2f2f2;
+}
+
+/* Handle */
+
+::-moz-scrollbar-thumb {
+    background: rgb(12, 60, 63);
+    border-radius: 12px;
+    animation: fadeSlide 300ms;
+    transition-duration: 300ms;
+    transition: ease-in-out 300ms;
+}
+
+/* Handle on hover */
+
+::-moz-scrollbar-thumb:hover {
+    background: rgb(34, 190, 230);
+    animation: fadeSlide 300ms;
+    transition-duration: 300ms;
+    transition: ease-in-out 300ms;
+}
